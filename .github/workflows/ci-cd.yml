@@ -19,10 +19,13 @@ jobs:
           python -m pip install pip --upgrade
           pip install -r requirements-dev.txt
 
-      - name: Linting code
-        run: |
-          pip install flake8
-          flake8 .
+#      - name: Linting code
+#        run: |
+#          pip install flake8
+#          flake8 .
+
+      - name: Run migrations
+        run: python manage.py migrate
 
       - name: Test with pytest
         run: pytest
