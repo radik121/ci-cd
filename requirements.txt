@@ -2,3 +2,8 @@ django
 djangorestframework
 psycopg2-binary
 django_filter
+pytest
+pytest-django
+model_bakery
+gunicorn
+django_heroku
